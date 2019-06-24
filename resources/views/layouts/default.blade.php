@@ -1,0 +1,10 @@
+<html>
+<head>
+    @include('include.head')
+</head>
+<body>
+  <header>
+    @include('include.header')
+  </header>
+</body>
+</html>
