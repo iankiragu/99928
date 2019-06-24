@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/', 'Iank.home');
+Route::view('/', 'IanK.home');
 Route::get('student', 'StudentController@create');
 Route::get('fees', 'FeesController@create');
 Route::post('student','StudentController@store');
