@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Str;
+$ url= parse_url(getenv("CLEARDB_DATABASE_URL"));
+$host= $url["host"];
+$username=$["user"];
+$password=$["pass"];
+$database= substr($url["path"], 1);
+
 
 return [
 
@@ -45,12 +51,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' =>'us-cdbr-iron-east-02.cleardb.net',
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => 'heroku_c4615fb2a9e8c01',
+            'username' => 'bb62b134135236',
+            'password' => 'ffa1afef',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
