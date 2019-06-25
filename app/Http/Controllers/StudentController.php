@@ -24,7 +24,7 @@ class StudentController extends Controller
      */
     public function create()
     {
-        return view('Iank.student');
+        return view('IanK.student');
     }
 
     /**
@@ -54,7 +54,7 @@ class StudentController extends Controller
     public function show()
     {
         $students= Student::all();
-        return view('Iank.studentRecord', compact(['students']));
+        return view('IanK.studentRecord', compact(['students']));
         }
 
 

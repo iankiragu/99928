@@ -25,7 +25,7 @@ class FeesController extends Controller
      */
     public function create()
     {
-        return view('Iank.fees');
+        return view('IanK.fees');
 
     }
 
@@ -67,7 +67,7 @@ class FeesController extends Controller
     {
         $fees= Fees::all();
         $total= DB::table('fees')->sum('amount');
-        return view('Iank.FeesPaid', compact(['fees']))->with('total',$total );
+        return view('IanK.FeesPaid', compact(['fees']))->with('total',$total );
 
     }
 
